@@ -15,7 +15,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#sevices">Services</a>
+            <a href="#projects">Projects</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -28,13 +28,13 @@
             <h3>And <span>I'm a Web Developer</span></h3>
             <div class="social-media">
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishna-mahajan-85421a278/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="http://instagram.com/kr_is_hn_aa" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/krishna79995" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
             <div class="home-img">
-                <img src="/images/profile.png" alt="profile">
+                <img id="home-img" src="/images/profile.png" alt="profile">
             </div>
         
     </section>
@@ -44,11 +44,52 @@
             <img src="images/aboutpic.jpg" alt="">
         </div>
         <div class="about-content">
-            <h2 class="heading">ABOUT <span>ME</span></h2>
+            <h2 class="heading">About <span>Me</span></h2>
             <h3>Web Developer</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi animi accusantium ad. Suscipit in nisi voluptas. Aut vitae officiis impedit veniam architecto illum sint autem laborum illo dolor, cum nostrum sequi iusto eligendi perspiciatis, maxime eaque asperiores. Saepe maxime velit quibusdam placeat libero consequuntur ullam explicabo iusto dolorem illum.</p>
             <a href="#" class="btn">Read more</a>
         </div>
     </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in perferendis quos vel, numquam autem aut praesentium a recusandae harum sunt, mollitia ut architecto sequi cupiditate repellat voluptatum blanditiis corrupti.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="projects-box">
+                <i class="fa-brands fa-python"></i>               
+                <h3>Python</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in perferendis quos vel, numquam autem aut praesentium a recusandae harum sunt, mollitia ut architecto sequi cupiditate repellat voluptatum blanditiis corrupti.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form name="myForm" onsubmit="return validateForm()"  action="3">
+            <div class="input-box">
+                <input type="text" name="fname" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Mobile Number">
+                <input type="text" name="Subject" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+        
+    </section>
+    
+    
 </body> 
 </html>
