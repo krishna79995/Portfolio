@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Krishna's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7ie2x11iXN4Wl5/yes0XJ3Ck8XjMVW5bP5mL"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-        
+
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -27,26 +38,31 @@
             <h1>Krishna Mahajan</h1>
             <h3>And <span>I'm a Web Developer</span></h3>
             <div class="social-media">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/krishna-mahajan-85421a278/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="http://instagram.com/kr_is_hn_aa" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/krishna79995" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <span><a href=""><i class="fa-brands fa-facebook"></i></a></span>
+                <span><a href="https://www.linkedin.com/in/krishna-mahajan-85421a278/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
+                <span><a href="http://instagram.com/kr_is_hn_aa" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+                <span><a href="https://github.com/krishna79995" target="_blank"><i class="fa-brands fa-github"></i></a></span>
             </div>
         </div>
-            <div class="home-img">
-                <img id="home-img" src="/images/profile.png" alt="profile">
-            </div>
-        
+        <div class="home-img">
+            <img id="home-img" src="images/profile.png" alt="profile">
+        </div>
+    </section>
+
+
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/aboutpic.jpg" alt="">
+            <img class="about-img" src="images/aboutpic.jpg" alt="">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Web Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi animi accusantium ad. Suscipit in nisi voluptas. Aut vitae officiis impedit veniam architecto illum sint autem laborum illo dolor, cum nostrum sequi iusto eligendi perspiciatis, maxime eaque asperiores. Saepe maxime velit quibusdam placeat libero consequuntur ullam explicabo iusto dolorem illum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi animi accusantium ad.
+                Suscipit in nisi voluptas. Aut vitae officiis impedit veniam architecto illum sint autem laborum illo
+                dolor, cum nostrum sequi iusto eligendi perspiciatis, maxime eaque asperiores. Saepe maxime velit
+                quibusdam placeat libero consequuntur ullam explicabo iusto dolorem illum.</p>
             <a href="#" class="btn">Read more</a>
         </div>
     </section>
@@ -58,14 +74,18 @@
             <div class="projects-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in perferendis quos vel, numquam autem aut praesentium a recusandae harum sunt, mollitia ut architecto sequi cupiditate repellat voluptatum blanditiis corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in perferendis quos vel, numquam
+                    autem aut praesentium a recusandae harum sunt, mollitia ut architecto sequi cupiditate repellat
+                    voluptatum blanditiis corrupti.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
             <div class="projects-box">
-                <i class="fa-brands fa-python"></i>               
+                <i class="fa-brands fa-python"></i>
                 <h3>Python</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in perferendis quos vel, numquam autem aut praesentium a recusandae harum sunt, mollitia ut architecto sequi cupiditate repellat voluptatum blanditiis corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in perferendis quos vel, numquam
+                    autem aut praesentium a recusandae harum sunt, mollitia ut architecto sequi cupiditate repellat
+                    voluptatum blanditiis corrupti.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
@@ -74,22 +94,24 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form name="myForm" onsubmit="return validateForm()"  action="3">
+        <form id="myForm">
             <div class="input-box">
-                <input type="text" name="fname" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" id="fname" placeholder="Full Name">
+                <input type="text" id="email" placeholder="Email Address">
             </div>
             <div class="input-box">
-                <input type="number" name="number" placeholder="Mobile Number">
-                <input type="text" name="Subject" placeholder="Email Subject">
+                <input type="number" id="number" placeholder="Mobile Number">
+                <input type="text" id="Subject" placeholder="Email Subject">
             </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <input type="submit" value="Submit" class="btn">
         </form>
 
-        
+
     </section>
-    
+
+   
+
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2024 by @krishna | All Rights Reserved.</p>
@@ -99,5 +121,8 @@
             <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </footer>
-</body> 
+    <script src="script.js"></script>
+
+</body>
+
 </html>

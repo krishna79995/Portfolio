@@ -400,3 +400,34 @@ span{
         width:100%
     }
 }
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login form{
+    width: 30vw;
+    
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup form{
+    width: 30vw;
+    
+}
+
+.social-media span {
+    display: inline-block; /* Ensure spans align inline */
+    opacity: 0; /* Hide icons initially */
+    margin-right: 10px; /* Spacing between icons */
+    font-size: 24px; /* Adjust as needed */
+    transition: opacity 1s; /* Smooth fade-in transition */
+}
