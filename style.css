@@ -369,11 +369,16 @@ span{
 
     .about{
         flex-direction: column;
+        padding: 10rem 5%;  /* Reduce padding on mobile */
     }
 
     .about-img img{
-        width: 70vw;
+        width: 70vw;  /* Keep image responsive */
         margin-top: 4rem;
+    }
+
+    .about-content h2, .about-content h3, .about-content p{
+        font-size: 2rem;  /* Adjust font size */
     }
 
     .projects h2{
